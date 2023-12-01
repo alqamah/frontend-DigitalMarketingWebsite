@@ -60,11 +60,12 @@ nav a:hover {
 #background {
     background-color: #ffffff;
     /*background-color: #000000;*/
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #background img {
@@ -192,6 +193,8 @@ nav a:hover {
 }
 
 #toggle-btn img {
+    position: absolute;
+    top: 90%;
     transition: .5s ease-in-out;
 }
 
@@ -315,14 +318,20 @@ hamburger svg {
 /*EXPERTISE SECTION*/
 expertise {
     margin-top: 5%;
-    border-top: 2px solid black;
+    border-top: 10px solid rgb(139, 139, 139);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     overflow: hidden;
     
+    #exp-spacer{
+        width: 100%;
+        height: 20px;
+        background-color: black;
+    }
+
     #main-section {
         display: flex;
         margin-top: -90px;
@@ -333,10 +342,9 @@ expertise {
 
     }
 
-    #sh img {
+    .sh img {
         filter: invert(1);
-        padding: 0;
-        margin: 0;
+        z-index: 10;
         width: 100vw;
         height: 90px;
     }
@@ -362,8 +370,10 @@ expertise {
     .service h2 {
         padding-left: 10px;
         color: #ffffff;
-        margin-top: -30px;
-        font-size: 15px;
+        background-color: aqua;
+        margin-top: -120px;
+        padding: 15px;
+        font-size: 20px;
         font-weight: 400;
     }
 
@@ -374,7 +384,7 @@ expertise {
     #exp-text h1{
         background-color: rgb(255, 255, 255);
         padding: 1%;
-        padding-top: 100px;
+        padding-top: 1px;
         margin-left: 200px;
         border-top-right-radius: 100px;
         width: 40vw;
@@ -383,7 +393,7 @@ expertise {
     }
     #exp-text h3{
         padding: 20px;
-        padding-top: 10%;
+        padding-top: 1%;
         border-radius: 50px;
         background-color: rgb(255, 255, 255);
         width: 40vw;
@@ -392,3 +402,50 @@ expertise {
         font-weight: 400;
     }
 }
+
+
+/*Conact-me*/
+.contact-section {
+    border-top: 10px solid #191d1d;
+    margin: 0;
+    background-color: #2f4f4f;
+    color: white;
+    padding: 20px;
+  }
+  
+  .contact-section h1 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contact-info div {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .contact-info i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    line-height: 1.5;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contact-info {
+      flex-direction: column;
+    }
+  
+    .contact-info div {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  }
+  
