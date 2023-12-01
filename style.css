@@ -378,6 +378,7 @@ expertise {
     }
 
     #exp-text{
+        padding-top: 2%;
         display: flex;
         z-index: 5;
     }
@@ -392,11 +393,11 @@ expertise {
         font-weight: 700;
     }
     #exp-text h3{
-        padding: 20px;
-        padding-top: 1%;
+        padding: 3px;
+        padding-top: 2.5%;
         border-radius: 50px;
         background-color: rgb(255, 255, 255);
-        width: 40vw;
+        width: 30vw;
         margin-left: -20px;
         font-size: 20px;
         font-weight: 400;
