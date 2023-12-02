@@ -228,11 +228,16 @@ hamburger svg {
     #toggle-btn {
         display: none;
     }
+    
 
-    #header nav {
+    nav{
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        top: 20%;
         display: none;
     }
-
+ 
     .bg-icons {
         display: none;
     }
@@ -286,6 +291,11 @@ hamburger svg {
         top: 17%;
         height: 37px;
         width: 37px;
+    }
+
+    hamburger svg:active {
+        transform: rotate(90deg);
+        transition: .25s;
     }
 
 }
@@ -380,40 +390,67 @@ portfolio {
 
     .pr1 {
         grid-area: pr1;
-        background: url(https://source.unsplash.com/random/?computer,tech);
+        background: url(./resources/prtimg1.jpeg);
     }
 
     .pr2 {
         grid-area: pr2;
-        background: url(https://source.unsplash.com/random/?computer,code);
+        background: url(./resources/exp-img1.png);
 
     }
 
     .pr3 {
         grid-area: pr3;
-        background: url(https://source.unsplash.com/random/?computer,market);
+        background: url(./resources/prtimg4.jpeg);
 
     }
 
     .pr4 {
         grid-area: pr4;
-        background: url(https://source.unsplash.com/random/?computer,office);
+        background: url(./resources/prtimg7.jpeg);
 
     }
 
     .pr5 {
         grid-area: pr5;
-        background: url(https://source.unsplash.com/random/?computer,learn);
+        background: url(./resources/exp-img4.png);
 
     }
 
     .pr6 {
         grid-area: pr6;
-        background: url(https://source.unsplash.com/random/?computer,paper);
+        background: url(./resources/exp-img3.png);
 
     }
 
 
+}
+
+@media (max-width: 700px) {
+    portfolio{
+        background-color: #ffffff;
+        h1{
+            position: absolute;
+            font-size: 20px;
+            transform: rotate(0deg);
+            top:0%;
+            left: 0%;
+            width: 100%;
+            word-spacing: 5px;
+            text-align: center;
+            padding: 10px 0;
+        }
+        h3{
+            display: none;
+        } 
+        .container{
+            padding-top: 10px;
+            margin-top: 50px;
+            height: 100%;
+            width: 100vw;
+            background-color: white;
+        }  
+    }
 }
 
 
@@ -561,9 +598,9 @@ expertise {
 
 /*Conact-me*/
 .contact-section {
-    border-top: 10px solid #191d1d;
+    border-top: 10px solid #242424;
     margin: 0;
-    background-color: #2f4f4f;
+    background-color: #414141;
     color: white;
     padding: 20px;
 }
@@ -601,5 +638,122 @@ expertise {
     .contact-info div {
         width: 80%;
         margin-bottom: 20px;
+    }
+}
+
+
+/*TESTIMONIAL SECTION*/
+
+testimonials{
+    background-color: rgb(212, 212, 212);
+    display: flex;
+    flex-direction: column;
+    #tst-txt{
+        font-weight: 400;
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 2px 10px 30px 1px black;
+        border: 5px solid rgb(255, 255, 255);
+        align-self: center;
+        font-size: 50px;
+    }
+    #tst-body{
+        padding: 1%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+figure.snip1390 {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #3c3c3c;
+  text-align: center;
+  font-size: 16px;
+  background-color: #000000;
+  padding: 30px;
+  background-image: linear-gradient(-25deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.snip1390 *,
+figure.snip1390 *:before,
+figure.snip1390 *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+figure.snip1390 figcaption {
+  width: 100%;
+}
+figure.snip1390 h2,
+figure.snip1390 h4,
+figure.snip1390 blockquote {
+  margin: 0;
+}
+figure.snip1390 h2,
+figure.snip1390 h4 {
+  font-weight: 300;
+}
+figure.snip1390 h2 {
+  color: #ffffff;
+}
+figure.snip1390 h4 {
+  color: #a6a6a6;
+}
+figure.snip1390 blockquote {
+  font-size: 1em;
+  padding: 45px 20px 40px 50px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  position: relative;
+}
+figure.snip1390 blockquote:before {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 70px;
+  opacity: 0.25;
+  font-style: normal;
+  top: 0px;
+  left: 20px;
+}
+figure.snip1390 .profile {
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+  margin-bottom: 10px;
+  border: solid 5px #A6A57A;
+}
+}
+
+@media screen and (max-width: 768px) {
+    testimonials h1{
+        transform: scale(0.5);
+        margin: 0;
+        text-align: center;
+    }
+    #tst-body{
+        transform: scale(0.75);
+        margin: 0;
+        padding: 0;
+        margin-top: -150px;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        height: fit-content;
     }
 }
