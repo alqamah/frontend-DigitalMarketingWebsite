@@ -225,6 +225,10 @@ hamburger svg {
         padding: 0;
     }
 
+    #toggle-btn {
+        display: none;
+    }
+
     #header nav {
         display: none;
     }
@@ -286,6 +290,10 @@ hamburger svg {
 
 }
 
+hero {
+    margin: 0;
+}
+
 /*ANIMATIONS*/
 @keyframes scan {
     to {
@@ -315,94 +323,240 @@ hamburger svg {
 }
 
 
-/*EXPERTISE SECTION*/
-expertise {
-    margin-top: 5%;
-    border-top: 10px solid rgb(139, 139, 139);
+/*PORTFOLIO SECTION*/
+portfolio {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    height: 110vh;
-    width: 100%;
-    overflow: hidden;
-    
-    #exp-spacer{
-        width: 100%;
-        height: 20px;
+    align-content: flex-end;    
+    background-color: #000000;
+    position: relative;
+    h1{
+        position: absolute;
+        padding: 20px;
+        font-size: 100px;
+        color: #ffffff;
         background-color: black;
+        text-transform: uppercase;
+        transform: rotate(90deg);
+        top:33%;
+        right:-15%;
+        word-spacing: 30px;
+    }
+    h3{
+        color: rgba(251, 251, 251, 0.6);
+        width: 250px;
+        padding-right: 20px;
+        position: absolute;
+        font-size: 15px;
+        text-justify:inter-word;
+        font-weight: 400;
+        bottom: 0%;
+        right: 0;
     }
 
-    #main-section {
+    .container {
+        h4{
+            margin-left: -6px;
+            background-color: #ffffff;
+            color: black;
+            padding:5px 10px;
+            font-size: 20px;
+            width: fit-content;
+            font-variant: small-caps;
+        }
+        margin: 20px;
+        height: 1200px;
+        width: 1200px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "pr1 pr1 pr2"
+            "pr3 pr4 pr4"
+            "pr3 pr5 pr6";
+    }
+
+    .pr1 {
+        grid-area: pr1;
+        background: url(https://source.unsplash.com/random/?computer,tech);
+    }
+
+    .pr2 {
+        grid-area: pr2;
+        background: url(https://source.unsplash.com/random/?computer,code);
+
+    }
+
+    .pr3 {
+        grid-area: pr3;
+        background: url(https://source.unsplash.com/random/?computer,market);
+
+    }
+
+    .pr4 {
+        grid-area: pr4;
+        background: url(https://source.unsplash.com/random/?computer,office);
+
+    }
+
+    .pr5 {
+        grid-area: pr5;
+        background: url(https://source.unsplash.com/random/?computer,learn);
+
+    }
+
+    .pr6 {
+        grid-area: pr6;
+        background: url(https://source.unsplash.com/random/?computer,paper);
+
+    }
+
+
+}
+
+
+/*EXPERTISE SECTION*/
+expertise {
+    #exp-sm-list {
+        display: none;
+    }
+
+    display: flex;
+    position: relative;
+
+    #exp-lg {
         display: flex;
-        margin-top: -90px;
         flex-direction: column;
-        height: 100%;
-        width: 100%;
-        background-color: rgb(255, 255, 255);
-
     }
 
-    .sh img {
+    #exp-text {
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        border-top: 20px solid rgb(51, 51, 51);
+        border-bottom: 15px solid rgb(51, 51, 51);
+    }
+
+    #exp-text h1 {
+        align-self: center;
+        width: 50%;
+        padding: 10px;
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    #exp-text h3 {
+        width: 40%;
+        align-self: center;
+        color: white;
+        padding-left: 20px;
+        font-weight: 300;
+    }
+
+    #exp-img-section {
+        border-top: 10px solid rgba(51, 51, 51, 0.625);
+    }
+
+    .exp-oval {
         filter: invert(1);
-        z-index: 10;
-        width: 100vw;
-        height: 90px;
+        width: 100%;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .exp-oval:first-child {
+        border-top: 5px solid rgba(255, 255, 255, 0.177);
     }
 
     .services {
-        margin-top: -50px;
-        align-self: flex-end;
         display: flex;
+        position: relative;
+        width: 100%;
+        z-index: 1;
     }
 
     .service {
-        width: 25%;
-        height: fit-content;
+        width: 20%;
     }
 
     .service img {
-        width: 305px;
-        margin: 0;
-        height: 490px;
-        border-radius: 20px 0 0 0;
+        width: 100%;
+        height: 65vh;
     }
 
-    .service h2 {
-        padding-left: 10px;
-        color: #ffffff;
-        background-color: aqua;
-        margin-top: -120px;
-        padding: 15px;
-        font-size: 20px;
+    .service h4 {
+        position: absolute;
         font-weight: 400;
-    }
-
-    #exp-text{
-        padding-top: 2%;
-        display: flex;
-        z-index: 5;
-    }
-    #exp-text h1{
-        background-color: rgb(255, 255, 255);
-        padding: 1%;
-        padding-top: 1px;
-        margin-left: 200px;
-        border-top-right-radius: 100px;
-        width: 40vw;
-        font-size: 70px;
-        font-weight: 700;
-    }
-    #exp-text h3{
-        padding: 3px;
-        padding-top: 2.5%;
-        border-radius: 50px;
-        background-color: rgb(255, 255, 255);
-        width: 30vw;
-        margin-left: -20px;
-        font-size: 20px;
-        font-weight: 400;
+        color: rgb(255, 255, 255);
+        padding-left: 2%;
+        bottom: 10%;
     }
 }
+
+@media (max-width: 700px) {
+    expertise {
+        border-top: 5px solid grey;
+        border-bottom: 5px solid grey;
+        display: flex;
+        position: relative;
+        align-content: center;
+        height: fit-content;
+        width: 100vw;
+
+        #exp-lg {
+            display: flex;
+            flex-direction: column;
+            margin: 0 20px;
+        }
+
+        #exp-text {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            width: 100%;
+        }
+
+        #exp-text h1 {
+            align-self: center;
+            width: 100%;
+            padding: 10px;
+            background-color: #ffffff;
+            text-align: center;
+            font-size: 33px;
+        }
+
+        #exp-text h3 {
+            width: 90%;
+            padding: 0;
+            margin: 0;
+            text-justify: distribute-all-lines, distribute;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+            text-transform: lowercase;
+        }
+
+        #exp-sm-list {
+            padding: 20px;
+            display: block;
+            line-height: 25px;
+            font-size: 15px;
+        }
+
+        #exp-img-section {
+            display: none;
+        }
+
+    }
+
+}
+
 
 
 /*Conact-me*/
@@ -412,41 +566,40 @@ expertise {
     background-color: #2f4f4f;
     color: white;
     padding: 20px;
-  }
-  
-  .contact-section h1 {
+}
+
+.contact-section h1 {
     text-align: center;
     margin-bottom: 40px;
-  }
-  
-  .contact-info {
+}
+
+.contact-info {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
-  
-  .contact-info div {
+}
+
+.contact-info div {
     width: 30%;
     text-align: center;
-  }
-  
-  .contact-info i {
+}
+
+.contact-info i {
     font-size: 40px;
     margin-bottom: 10px;
-  }
-  
-  .contact-info p {
+}
+
+.contact-info p {
     line-height: 1.5;
-  }
-  
-  @media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
     .contact-info {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
+
     .contact-info div {
-      width: 80%;
-      margin-bottom: 20px;
+        width: 80%;
+        margin-bottom: 20px;
     }
-  }
-  
+}

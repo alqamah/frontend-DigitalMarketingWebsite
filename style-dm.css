@@ -60,7 +60,7 @@ nav a:hover {
 
 #background {
     background-color: #000000;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
