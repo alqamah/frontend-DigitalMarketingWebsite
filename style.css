@@ -43,7 +43,6 @@ nav {
 }
 
 nav a {
-    text-align: center;
     color: rgba(24, 24, 24, 0.637);
     /*color: rgba(255, 255, 255, 0.637);*/
     text-decoration: none;
@@ -648,8 +647,8 @@ testimonials {
         position: relative;
         overflow: hidden;
         margin: 10px;
-        min-width: 230px;
-        max-width: 315px;
+        min-width: 200px;
+        max-width: 250px;
         width: 100%;
         color: #3c3c3c;
         text-align: center;
@@ -746,6 +745,12 @@ testimonials {
     }
     .tst-container{
         align-self: center;
+    }
+    figure.tst-container .profile {
+        position: absolute;
+        top: 20px;
+        left: 23px;
+        transform: scale(0.75);
     }
 }
 
