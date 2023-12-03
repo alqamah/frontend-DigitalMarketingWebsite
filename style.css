@@ -450,7 +450,7 @@ portfolio {
 
         h1 {
             position: absolute;
-            font-size: 20px;
+            font-size: 33px;
             transform: rotate(0deg);
             top: 0%;
             left: 0%;
@@ -770,7 +770,7 @@ testimonials {
 .contact-section h1 {
     text-align: center;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 33px;
     margin-bottom: 50px;
 }
 
