@@ -3,7 +3,6 @@ var tbtn = document.getElementById("toggle-btn");
 window.console.log(tbtn);
 
 var mode = true;
-render();
 
 tbtn.addEventListener('click', function () {
     mode = !mode;
