@@ -21,7 +21,7 @@ main {
     transition: 0.25s ease-in-out;
     position: relative;
     z-index: 1;
-    
+
 }
 
 #header:hover {
@@ -45,10 +45,13 @@ nav {
 nav a {
     text-align: center;
     color: rgba(24, 24, 24, 0.637);
+    /*color: rgba(255, 255, 255, 0.637);*/
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     padding: 10px 20px;
     transition: 0.2s ease color;
+    width: fit-content;
+
 }
 
 nav a:hover {
@@ -66,7 +69,6 @@ nav a:hover {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 #background img {
@@ -230,25 +232,26 @@ hamburger svg {
     #toggle-btn {
         display: none;
     }
-    
 
-    nav{
+
+    nav {
         flex-direction: column;
         position: absolute;
         right: -100%;
         width: 60%;
-        padding-top: 10px; 
+        padding-top: 10px;
         transform: scale(1.1);
-        background-color : white;
+        background-color: white;
         transition: 0.3s ease-in-out;
 
     }
-    nav a{
+
+    nav a {
         padding: 15px 0;
         transform: scale(1.5);
         font-weight: 600;
     }
- 
+
     .bg-icons {
         display: none;
     }
@@ -347,45 +350,49 @@ hero {
 
 /*PORTFOLIO SECTION*/
 portfolio {
+    border-top: 10px solid grey;
     display: flex;
     flex-direction: row;
-    align-content: flex-end;    
-    background-color: #000000;
+    align-content: flex-end;
+    background-color: #a7a7a7;
     position: relative;
-    h1{
+
+    h1 {
         position: absolute;
         padding: 20px;
         font-size: 100px;
-        color: #ffffff;
-        background-color: black;
+        color: #000000;
+        background-color: rgb(255, 255, 255);
         text-transform: uppercase;
         transform: rotate(90deg);
-        top:33%;
-        right:-15%;
+        top: 33%;
+        right: -15%;
         word-spacing: 30px;
     }
-    h3{
-        color: rgba(251, 251, 251, 0.6);
+
+    h3 {
+        color: rgba(0, 0, 0, 0.6);
         width: 250px;
         padding-right: 20px;
         position: absolute;
         font-size: 15px;
-        text-justify:inter-word;
+        text-justify: inter-word;
         font-weight: 400;
         bottom: 0%;
         right: 0;
     }
 
     .container {
-        h4{
+        h4 {
             margin-left: -6px;
             background-color: #ffffff;
             color: black;
-            padding:5px 10px;
+            padding: 5px 10px;
             font-size: 20px;
             width: fit-content;
             font-variant: small-caps;
         }
+
         margin: 20px;
         height: 1200px;
         width: 1200px;
@@ -394,10 +401,9 @@ portfolio {
         grid-template-rows: 1fr 1fr 1fr;
         gap: 10px 10px;
         grid-auto-flow: row;
-        grid-template-areas:
-            "pr1 pr1 pr2"
-            "pr3 pr4 pr4"
-            "pr3 pr5 pr6";
+        grid-template-areas: "pr1 pr1 pr2"
+        "pr3 pr4 pr4"
+        "pr3 pr5 pr6";
     }
 
     .pr1 {
@@ -439,29 +445,32 @@ portfolio {
 }
 
 @media (max-width: 700px) {
-    portfolio{
+    portfolio {
         background-color: #ffffff;
-        h1{
+
+        h1 {
             position: absolute;
             font-size: 20px;
             transform: rotate(0deg);
-            top:0%;
+            top: 0%;
             left: 0%;
             width: 100%;
             word-spacing: 5px;
             text-align: center;
             padding: 10px 0;
         }
-        h3{
+
+        h3 {
             display: none;
-        } 
-        .container{
+        }
+
+        .container {
             padding-top: 10px;
             margin-top: 50px;
             height: 100%;
             width: 100vw;
             background-color: white;
-        }  
+        }
     }
 }
 
@@ -482,24 +491,25 @@ expertise {
 
     #exp-text {
         display: flex;
-        background-color: rgb(0, 0, 0);
-        border-top: 20px solid rgb(51, 51, 51);
-        border-bottom: 15px solid rgb(51, 51, 51);
+        background-color: rgb(255, 255, 255);
+        border-top: 20px solid grey;
+        border-bottom: 15px solid rgba(51, 51, 51, 0.267);
     }
 
     #exp-text h1 {
         align-self: center;
         width: 50%;
         padding: 10px;
-        background-color: #ffffff;
+        background-color: #000000;
         text-align: center;
         font-size: 60px;
+        color: white;
     }
 
     #exp-text h3 {
         width: 40%;
         align-self: center;
-        color: white;
+        color: rgb(0, 0, 0);
         padding-left: 20px;
         font-weight: 300;
     }
@@ -514,6 +524,8 @@ expertise {
         height: 100px;
         position: relative;
         z-index: 2;
+        display: block;
+
     }
 
     .exp-oval:first-child {
@@ -537,10 +549,11 @@ expertise {
     }
 
     .service h4 {
+        background-color: #0000008f;
         position: absolute;
         font-weight: 400;
         color: rgb(255, 255, 255);
-        padding-left: 2%;
+        padding: 1%;
         bottom: 10%;
     }
 }
@@ -574,6 +587,7 @@ expertise {
             width: 100%;
             padding: 10px;
             background-color: #ffffff;
+            color: #000000;
             text-align: center;
             font-size: 33px;
         }
@@ -608,6 +622,142 @@ expertise {
 
 
 
+
+
+/*TESTIMONIAL SECTION*/
+
+testimonials {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+
+    #tst-txt {
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 2px 10px 30px 1px black;
+        border: 5px solid rgb(155, 155, 155);
+        align-self: center;
+        font-size: 50px;
+    }
+
+    #tst-body {
+        padding: 1%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+    @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+    figure.tst-container {
+        position: relative;
+        overflow: hidden;
+        margin: 10px;
+        min-width: 230px;
+        max-width: 315px;
+        width: 100%;
+        color: #3c3c3c;
+        text-align: center;
+        font-size: 16px;
+        background-color: #1e1e1e;
+        padding: 30px;
+        background-image: linear-gradient(-25deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
+        box-sizing: border-box;
+    }
+
+    figure.tst-container *,
+    figure.tst-container *:before,
+    figure.tst-container *:after {
+        box-sizing: border-box;
+        transition: all 0.35s ease;
+    }
+
+    figure.tst-container figcaption {
+        width: 100%;
+    }
+
+    figure.tst-container h2,
+    figure.stst-container h4,
+    figure.tst-container blockquote {
+        margin: 0;
+    }
+
+    figure.tst-container h2,
+    figure.tst-container h4 {
+        font-weight: 300;
+    }
+
+    figure.tst-container h2 {
+        color: #ffffff;
+    }
+
+    figure.tst-container h4 {
+        color: #cccccc;
+    }
+
+    figure.tst-container blockquote {
+        font-size: 1em;
+        padding: 45px 20px 40px 50px;
+        margin-top: 30px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        text-align: left;
+        position: relative;
+    }
+
+    figure.tst-container blockquote:before {
+        font-family: 'FontAwesome';
+        content: "\201C";
+        position: absolute;
+        font-size: 70px;
+        opacity: 0.25;
+        font-style: normal;
+        top: 0px;
+        left: 20px;
+    }
+
+    figure.tst-container .profile {
+        width: 100px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+        margin-bottom: 10px;
+        border: solid 5px #000000;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #tst-txt {
+        display: none;
+    }
+
+    #tst-body::before {
+        content: "OUR TESTIMONIALS";
+        font-size: 33px;
+        align-self: center;
+        padding: 20px 0;
+        font-weight: 600;
+
+    }
+
+    #tst-body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        height: fit-content;
+    }
+    .tst-container{
+        align-self: center;
+    }
+}
+
 /*Conact-me*/
 .contact-section {
     border-top: 10px solid #242424;
@@ -619,7 +769,9 @@ expertise {
 
 .contact-section h1 {
     text-align: center;
-    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 50px;
 }
 
 .contact-info {
@@ -631,6 +783,8 @@ expertise {
 .contact-info div {
     width: 30%;
     text-align: center;
+    padding: 20px;
+    background-color: #a6a6a6;
 }
 
 .contact-info i {
@@ -650,122 +804,5 @@ expertise {
     .contact-info div {
         width: 80%;
         margin-bottom: 20px;
-    }
-}
-
-
-/*TESTIMONIAL SECTION*/
-
-testimonials{
-    background-color: rgb(212, 212, 212);
-    display: flex;
-    flex-direction: column;
-    #tst-txt{
-        font-weight: 400;
-        padding: 10px 20px;
-        border-radius: 20px;
-        box-shadow: 2px 10px 30px 1px black;
-        border: 5px solid rgb(255, 255, 255);
-        align-self: center;
-        font-size: 50px;
-    }
-    #tst-body{
-        padding: 1%;
-        display: flex;
-        align-content: center;
-        justify-content: center;
-    }
-
-
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
-figure.snip1390 {
-  position: relative;
-  overflow: hidden;
-  margin: 10px;
-  min-width: 230px;
-  max-width: 315px;
-  width: 100%;
-  color: #3c3c3c;
-  text-align: center;
-  font-size: 16px;
-  background-color: #000000;
-  padding: 30px;
-  background-image: linear-gradient(-25deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.1) 100%);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-figure.snip1390 *,
-figure.snip1390 *:before,
-figure.snip1390 *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.35s ease;
-  transition: all 0.35s ease;
-}
-figure.snip1390 figcaption {
-  width: 100%;
-}
-figure.snip1390 h2,
-figure.snip1390 h4,
-figure.snip1390 blockquote {
-  margin: 0;
-}
-figure.snip1390 h2,
-figure.snip1390 h4 {
-  font-weight: 300;
-}
-figure.snip1390 h2 {
-  color: #ffffff;
-}
-figure.snip1390 h4 {
-  color: #a6a6a6;
-}
-figure.snip1390 blockquote {
-  font-size: 1em;
-  padding: 45px 20px 40px 50px;
-  margin-top: 30px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  box-shadow: inset -1.4px -1.4px 2px rgba(0, 0, 0, 0.3);
-  text-align: left;
-  position: relative;
-}
-figure.snip1390 blockquote:before {
-  font-family: 'FontAwesome';
-  content: "\201C";
-  position: absolute;
-  font-size: 70px;
-  opacity: 0.25;
-  font-style: normal;
-  top: 0px;
-  left: 20px;
-}
-figure.snip1390 .profile {
-  width: 100px;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
-  margin-bottom: 10px;
-  border: solid 5px #A6A57A;
-}
-}
-
-@media screen and (max-width: 768px) {
-    testimonials h1{
-        transform: scale(0.5);
-        margin: 0;
-        text-align: center;
-    }
-    #tst-body{
-        transform: scale(0.75);
-        margin: 0;
-        padding: 0;
-        margin-top: -150px;
-        width: 100%;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        flex-direction: column;
-        height: fit-content;
     }
 }
