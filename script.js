@@ -40,7 +40,7 @@ function togglemenuview(){
     }
     else{
         menu.style.right = '-100%';
-        htxt.style.marginTop = '20px';
+        htxt.style.marginTop = '10px';
     }
     vflag = !vflag;
 }
