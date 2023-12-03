@@ -211,6 +211,7 @@ nav a:hover {
 
 hamburger svg {
     display: none;
+    transition: .2s ease-in-out;
 }
 
 #sm-img {
@@ -234,8 +235,17 @@ hamburger svg {
         flex-direction: column;
         position: absolute;
         right: -100%;
-        top: 20%;
-        display: none;
+        width: 60%;
+        padding-top: 10px; 
+        transform: scale(1.1);
+        background-color : white;
+        transition: 0.3s ease-in-out;
+
+    }
+    nav a{
+        padding: 15px 0;
+        transform: scale(1.5);
+        font-weight: 600;
     }
  
     .bg-icons {
@@ -255,6 +265,7 @@ hamburger svg {
     #main-text {
         margin-top: 10%;
         padding: 0;
+        z-index: 1;
     }
 
     #title {
