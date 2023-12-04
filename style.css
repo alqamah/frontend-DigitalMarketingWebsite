@@ -62,6 +62,7 @@ nav a:hover {
 
 #background {
     background-color: #ffffff;
+    margin-top: -45px;
     /*background-color: #000000;*/
     height: 100vh;
     display: flex;
@@ -71,7 +72,7 @@ nav a:hover {
 }
 
 #background img {
-    padding: 5px;
+    padding: 10px;
     position: absolute;
     filter: invert(0);
     /*invert(1)*/
@@ -96,19 +97,17 @@ nav a:hover {
     margin-top: -50%;
     box-shadow: 0 0 5px 150px rgba(183, 180, 180, 0.367);
     background: radial-gradient(rgb(255, 255, 255) 90%, rgba(99, 99, 99, 0.118) 5%);
-    position: relative;
-    animation: size 3s infinite linear;
+    position: absolute;
 }
 
 .green-scanner {
     width: 1500px;
     height: 1500px;
     border-radius: 50%;
-    background: conic-gradient(#5353531a, #1817171c);
-    /*background: conic-gradient(#2323233d, #12111132);
-    */
+    background: conic-gradient(#0000001e, #9494941c);
+    /*background: conic-gradient(#2323233d, #12111132);*/
     position: absolute;
-    top: 0;
+    top: 0px;
     left: 0;
     animation: scan 7s infinite linear;
 
@@ -120,12 +119,11 @@ nav a:hover {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 1px solid #eeeeee25;
+    border: 1px solid #eeeeeecd;
     position: absolute;
-    background-color: rgba(61, 61, 61, 0.622)41;
-    /*
-    background-color: rgba(61, 61, 61, 0.141);*/
+    background-color: rgba(112, 111, 111, 0.078);
     animation: ripple 5s infinite alternate ease-in-out;
+    /*background-color: rgba(61, 61, 61, 0.141);*/
 }
 
 .outer-circle::after {
@@ -321,7 +319,7 @@ hero {
 /*ANIMATIONS*/
 @keyframes scan {
     to {
-        transform: rotate(1turn);
+        transform: rotate(2turn);
     }
 }
 
@@ -743,9 +741,11 @@ testimonials {
         flex-direction: column;
         height: fit-content;
     }
-    .tst-container{
+
+    .tst-container {
         align-self: center;
     }
+
     figure.tst-container .profile {
         position: absolute;
         top: 20px;
@@ -801,8 +801,9 @@ testimonials {
         width: 80%;
         margin-bottom: 20px;
     }
+
     .contact-section h1 {
         font-size: 33px;
-        
+
     }
 }

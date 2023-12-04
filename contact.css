@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Raleway', sans-serif;
 
 }
@@ -38,16 +38,16 @@ nav a {
     width: fit-content;
 
 }
-h3{
+
+h3 {
     font-family: 'Raleway', sans-serif;
 
 }
+
 nav a:hover {
     color: rgb(0, 0, 0);
 }
-hamburger{
-    display: none;
-}
+
 
 .contact {
     padding: 30px;
@@ -103,6 +103,7 @@ hamburger{
 .contact .content .info {
     margin-top: 30px;
 }
+
 .contact .content .info i {
     font-size: 30px;
     padding: 0;
@@ -112,6 +113,7 @@ hamburger{
     text-align: center;
     width: 20px;
 }
+
 .contact .content .info h4 {
     font-size: 13px;
     line-height: 1.4;
@@ -121,4 +123,47 @@ hamburger{
     font-size: 13px;
     font-weight: 300;
     color: #282828;
+}
+
+hamburger {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    hamburger {
+        display: block;
+
+    }
+
+    hamburger svg {
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 17%;
+        height: 37px;
+        width: 37px;
+    }
+
+    hamburger svg:active {
+        transform: rotate(90deg);
+        transition: .25s;
+    }
+
+    nav {
+        flex-direction: column;
+        position: absolute;
+        right: -100%;
+        width: 60%;
+        padding-top: 10px;
+        transform: scale(1.1);
+        background-color: white;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    nav a {
+        padding: 15px 0;
+        transform: scale(1.5);
+        font-weight: 600;
+    }
 }
