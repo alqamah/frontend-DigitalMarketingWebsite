@@ -56,7 +56,7 @@ nav a:hover {
 .contact .heading h2 {
     font-family: 'Raleway', sans-serif;
     font-variant: small-caps;
-    font-size: 33px;
+    font-size: 50px;
     font-weight: 700;
     margin: 0;
     padding: 0;
@@ -165,5 +165,9 @@ hamburger {
         padding: 15px 0;
         transform: scale(1.5);
         font-weight: 600;
+    }
+    .contact .heading h2 {
+        font-variant: small-caps;
+        text-transform: uppercase;
     }
 }
