@@ -224,6 +224,8 @@ hamburger svg {
     body {
         margin: 0;
         padding: 0;
+        overflow-y: hidden;
+        width: 100vw;
     }
 
     #toggle-btn {
