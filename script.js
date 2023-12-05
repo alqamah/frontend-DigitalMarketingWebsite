@@ -31,10 +31,12 @@ function togglemenuview() {
     var menu = document.getElementById("nav");
     var htxt = document.getElementById("main-text");
     if (vflag == false) {
+        menu.style.display = 'flex';
         menu.style.right = '0px';
         htxt.style.marginTop = '130px';
     }
     else {
+        menu.style.display = 'none';
         menu.style.right = '-100%';
         htxt.style.marginTop = '10px';
     }

@@ -234,6 +234,7 @@ hamburger svg {
 
 
     nav {
+        display: none;
         flex-direction: column;
         position: absolute;
         right: -100%;
