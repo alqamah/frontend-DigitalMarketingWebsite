@@ -347,6 +347,9 @@ hero {
 
 
 /*PORTFOLIO SECTION*/
+portfolio-sm{
+    display: none;
+}
 portfolio {
     margin-top: 13%;
     display: flex;
@@ -444,8 +447,23 @@ portfolio {
 }
 
 @media (max-width: 700px) {
+    portfolio-sm{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 25%;
+        li{
+            font-size: 15px;
+            list-style: none;
+            line-height: 25px;
+        }
+
+    }
     portfolio {
-        background-color: #ffffff;
+        display: none;
+ /*       background-color: #ffffff;
 
         h1 {
             position: absolute;
@@ -470,7 +488,8 @@ portfolio {
             width: 100vw;
             background-color: white;
         }
-    }
+    }*/
+}
 }
 
 
