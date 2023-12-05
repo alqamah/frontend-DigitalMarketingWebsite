@@ -777,6 +777,9 @@ testimonials {
     .tst-container {
         align-self: center;
     }
+    .tst-container img{
+        display: none;
+    }
 
     figure.tst-container .profile {
         position: absolute;
