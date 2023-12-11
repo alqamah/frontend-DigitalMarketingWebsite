@@ -12,7 +12,6 @@ var vflag = false;
 
 function togglemenuview() {
     var menu = document.getElementById("nav");
-    var htxt = document.getElementById("main-text");
     if (vflag == false) {
         menu.style.right = '0px';
     }
